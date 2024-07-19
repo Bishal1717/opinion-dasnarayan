@@ -56,7 +56,7 @@ async function scrape() {
 
     const pageContent = await page.content();
     console.log('Dashboard HTML content:', pageContent);
-  
+
     // Check for surveys
     const surveyAvailable = await page.evaluate(() => {
         return document.querySelector('.list-group-item') !== null; // Ensure this selector is correct
