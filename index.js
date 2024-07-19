@@ -79,5 +79,4 @@ async function scrape() {
 
 scrape().catch(error => {
     console.error('Error scraping:', error);
-    await browser.close();
 });
