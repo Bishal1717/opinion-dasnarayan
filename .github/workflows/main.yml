@@ -20,15 +20,15 @@ jobs:
       - name: Install dependencies
         run: npm install
         env:
-          OPINION_WORLD_USERNAME: ${{ secrets.OTHER_OPINION_WORLD_USERNAME }}
-          OPINION_WORLD_PASSWORD: ${{ secrets.OTHER_OPINION_WORLD_PASSWORD }}
-          TELEGRAM_TOKEN: ${{ secrets.OTHER_TELEGRAM_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.OTHER_TELEGRAM_CHAT_ID }}
+          OTHER_OPINION_WORLD_USERNAME: ${{ secrets.OTHER_OPINION_WORLD_USERNAME }}
+          OTHER_OPINION_WORLD_PASSWORD: ${{ secrets.OTHER_OPINION_WORLD_PASSWORD }}
+          OTHER_TELEGRAM_TOKEN: ${{ secrets.OTHER_TELEGRAM_TOKEN }}
+          OTHER_TELEGRAM_CHAT_ID: ${{ secrets.OTHER_TELEGRAM_CHAT_ID }}
 
       - name: Run script
         run: node index.js
         env:
-          OPINION_WORLD_USERNAME: ${{ secrets.OTHER_OPINION_WORLD_USERNAME }}
-          OPINION_WORLD_PASSWORD: ${{ secrets.OTHER_OPINION_WORLD_PASSWORD }}
-          TELEGRAM_TOKEN: ${{ secrets.OTHER_TELEGRAM_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.OTHER_TELEGRAM_CHAT_ID }}
+          OTHER_OPINION_WORLD_USERNAME: ${{ secrets.OTHER_OPINION_WORLD_USERNAME }}
+          OTHER_OPINION_WORLD_PASSWORD: ${{ secrets.OTHER_OPINION_WORLD_PASSWORD }}
+          OTHER_TELEGRAM_TOKEN: ${{ secrets.OTHER_TELEGRAM_TOKEN }}
+          OTHER_TELEGRAM_CHAT_ID: ${{ secrets.OTHER_TELEGRAM_CHAT_ID }}
