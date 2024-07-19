@@ -54,7 +54,8 @@ async function scrape() {
         console.log('Cookies popup not found or already accepted');
     }
 
-
+    const pageContent = await page.content();
+    console.log('Dashboard HTML content:', pageContent);
   
     // Check for surveys
     const surveyAvailable = await page.evaluate(() => {
